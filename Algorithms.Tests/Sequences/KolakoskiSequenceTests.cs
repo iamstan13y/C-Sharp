@@ -23,12 +23,14 @@ namespace Algorithms.Tests.Sequences
                 1, 2, 2, 1, 2, 2, 1, 1, 2, 1,
                 1, 2, 1, 2, 2, 1, 2, 1, 1, 2,
                 2, 1, 2, 2, 1, 1, 2, 1, 2, 2,
-                1, 2, 2, 1, 1, 2, 1, 1, 2, 2
+                1, 2, 2, 1, 1, 2, 1, 1, 2, 2,
             };
 
             var sequence = new KolakoskiSequence().Sequence.Take(100);
+            var sequence2 = new KolakoskiSequence2().Sequence.Take(100);
 
             sequence.Should().Equal(expected);
+            sequence2.Should().Equal(expected);
         }
     }
 }
